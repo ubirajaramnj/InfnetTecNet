@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infnet.Aula3.Atm.Domain.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infnet.Aula3.Atm.Domain", "Infnet.Aula3.Atm.Domain\Infnet.Aula3.Atm.Domain.csproj", "{FAA5C087-3CC2-44FD-8ECE-802D4300AED3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Model", "Solid.Model\Solid.Model.csproj", "{3867B26C-A198-40AF-93EF-2E9B3DFADFA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Model.Test", "Solid.Model.Test\Solid.Model.Test.csproj", "{A1DF06F3-C143-4431-9753-012FC6E51688}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FAA5C087-3CC2-44FD-8ECE-802D4300AED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA5C087-3CC2-44FD-8ECE-802D4300AED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA5C087-3CC2-44FD-8ECE-802D4300AED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3867B26C-A198-40AF-93EF-2E9B3DFADFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3867B26C-A198-40AF-93EF-2E9B3DFADFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3867B26C-A198-40AF-93EF-2E9B3DFADFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3867B26C-A198-40AF-93EF-2E9B3DFADFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DF06F3-C143-4431-9753-012FC6E51688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DF06F3-C143-4431-9753-012FC6E51688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DF06F3-C143-4431-9753-012FC6E51688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DF06F3-C143-4431-9753-012FC6E51688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

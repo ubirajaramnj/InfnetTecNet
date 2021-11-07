@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Infnet.Aula3.Atm.Domain
 {
-    public class Conta
+    public class Conta : IConta
     {
+
         private static readonly int _numero = 123;
         private static readonly int _pin = 12345;
 
         public int Numero { get => _numero; }
         public virtual List<Transacao> Transacoes { get; } = new();
 
-        public double Saldo()
+        public virtual double Saldo()
         {
             double saldo = 0;
             Transacoes.ForEach(t =>
@@ -22,7 +24,7 @@ namespace Infnet.Aula3.Atm.Domain
             return saldo;
         }
 
-        public void Deposito(double valor)
+        public virtual void Deposito(double valor)
         {
             Transacoes.Add(new Transacao()
             {
@@ -32,16 +34,11 @@ namespace Infnet.Aula3.Atm.Domain
             });
         }
 
-        public double Saque(double valor)
+        public virtual double Saque(double valor)
         {
-            if(Saldo() >= valor)
+            if (Saldo() >= valor)
             {
-                Transacoes.Add(new Transacao()
-                {
-                    Data = DateTime.Now,
-                    Tipo = TipoDeTransacao.Saida,
-                    Valor = valor
-                });
+                RegistrarSaque(valor);
             }
             else
             {
@@ -51,7 +48,21 @@ namespace Infnet.Aula3.Atm.Domain
             return valor;
         }
 
+        protected void RegistrarSaque(double valor)
+        {
+            Transacoes.Add(new Transacao()
+            {
+                Data = DateTime.Now,
+                Tipo = TipoDeTransacao.Saida,
+                Valor = valor
+            });
+        }
 
+        public Extrato Extrato(DateTime dataInicial, DateTime dataFinal)
+        {
+            var transacoesNoPeriodo = Transacoes.Where(t => t.Data >= dataInicial && t.Data <= dataFinal).ToList();
+            return new Extrato(_numero, Saldo(), transacoesNoPeriodo);
+        }
 
         public bool IsValid(int numeroDeConta, int pin)
         {

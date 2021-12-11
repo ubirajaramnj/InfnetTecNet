@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infnet.Aula3.Atm.Domain.Tests", "Infnet.Aula3.Atm.Domain.Tests\Infnet.Aula3.Atm.Domain.Tests.csproj", "{61D97108-FAF2-4A4A-AC60-BA99154AA2C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infnet.Aula3.Atm.Domain.Tests", "Infnet.Aula3.Atm.Domain.Tests\Infnet.Aula3.Atm.Domain.Tests.csproj", "{61D97108-FAF2-4A4A-AC60-BA99154AA2C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infnet.Aula3.Atm.Domain", "Infnet.Aula3.Atm.Domain\Infnet.Aula3.Atm.Domain.csproj", "{FAA5C087-3CC2-44FD-8ECE-802D4300AED3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infnet.Aula3.Atm.Domain", "Infnet.Aula3.Atm.Domain\Infnet.Aula3.Atm.Domain.csproj", "{FAA5C087-3CC2-44FD-8ECE-802D4300AED3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Model", "Solid.Model\Solid.Model.csproj", "{3867B26C-A198-40AF-93EF-2E9B3DFADFA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.Model", "Solid.Model\Solid.Model.csproj", "{3867B26C-A198-40AF-93EF-2E9B3DFADFA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Model.Test", "Solid.Model.Test\Solid.Model.Test.csproj", "{A1DF06F3-C143-4431-9753-012FC6E51688}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.Model.Test", "Solid.Model.Test\Solid.Model.Test.csproj", "{A1DF06F3-C143-4431-9753-012FC6E51688}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula4", "Aula4", "{940C51BA-B5F6-44D6-B48A-2CB39EAF6F83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula3", "Aula3", "{715E0C75-87BB-40AB-BFB4-5CF24FED3428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infnet.Aula4.Pdv.Domain", "Infnet.Aula4.Pdv.Domain\Infnet.Aula4.Pdv.Domain.csproj", "{A52EBA13-DB82-4B7F-B588-8C658A3F6FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infnet.Aula4.Pdv.Domain.Tests", "Infnet.Aula4.Pdv.Domain.Tests\Infnet.Aula4.Pdv.Domain.Tests.csproj", "{4C9B92B2-62AE-4CDF-94C7-07B256347EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,25 @@ Global
 		{A1DF06F3-C143-4431-9753-012FC6E51688}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DF06F3-C143-4431-9753-012FC6E51688}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DF06F3-C143-4431-9753-012FC6E51688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52EBA13-DB82-4B7F-B588-8C658A3F6FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52EBA13-DB82-4B7F-B588-8C658A3F6FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52EBA13-DB82-4B7F-B588-8C658A3F6FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52EBA13-DB82-4B7F-B588-8C658A3F6FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9B92B2-62AE-4CDF-94C7-07B256347EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9B92B2-62AE-4CDF-94C7-07B256347EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9B92B2-62AE-4CDF-94C7-07B256347EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9B92B2-62AE-4CDF-94C7-07B256347EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61D97108-FAF2-4A4A-AC60-BA99154AA2C9} = {715E0C75-87BB-40AB-BFB4-5CF24FED3428}
+		{FAA5C087-3CC2-44FD-8ECE-802D4300AED3} = {715E0C75-87BB-40AB-BFB4-5CF24FED3428}
+		{3867B26C-A198-40AF-93EF-2E9B3DFADFA2} = {715E0C75-87BB-40AB-BFB4-5CF24FED3428}
+		{A1DF06F3-C143-4431-9753-012FC6E51688} = {715E0C75-87BB-40AB-BFB4-5CF24FED3428}
+		{A52EBA13-DB82-4B7F-B588-8C658A3F6FA0} = {940C51BA-B5F6-44D6-B48A-2CB39EAF6F83}
+		{4C9B92B2-62AE-4CDF-94C7-07B256347EE6} = {940C51BA-B5F6-44D6-B48A-2CB39EAF6F83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CAAF511-C359-4F56-BEC4-9FA9BF7C713D}

@@ -7,7 +7,7 @@ namespace Infnet.Aula4.Pdv.Domain
     {
         public Guid Id { get; set; }
         public DateTime DataDoPedido { get; set; }
-        public List<ItemDePedido> Itens { get; set; } = new();
+        public virtual List<IItemDePedido> Itens { get; set; } = new();
 
         public double Total()
         {

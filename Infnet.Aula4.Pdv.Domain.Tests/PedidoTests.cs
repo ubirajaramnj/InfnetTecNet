@@ -21,14 +21,15 @@ namespace Infnet.Aula4.Pdv.Domain.Tests
                 }
             });
 
-            pedido.Itens.Add(new ItemDePedido()
+            pedido.Itens.Add(new ItemDePedido2()
             {
                 Quantidade = 1,
                 Produto = new Produto()
                 {
                     Codigo = "2",
                     Valor = 5,
-                }
+                },
+                XPTO = 1
             });
 
             Assert.AreEqual(10, pedido.Total());
